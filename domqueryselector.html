@@ -1,0 +1,41 @@
+<html>
+    <head>
+       <title>dom queryselector with tagname,id,classname</title>   
+    </head>
+    <body>
+        <h3>dom with tag name</h3>
+        <button onclick="fn()">change content</button>
+        <script>
+            function fn(){
+            var h3dom=document.querySelector("h3");
+            h3dom.innerText="dom with tag name update";
+            }
+        </script>
+
+
+        <h2 id="title">dom with idvalue</h2>
+        <button onclick="fn1()">submit</button>
+        <script>
+             function fn1(){
+            var h2=document.querySelector("#title");
+            h2.innerText="dom with id value update" ;
+             h2.style.color="red";
+             h2.style.padding="20px";
+            }
+        </script>
+
+
+       <h1 class="title">dom with classname</h1>
+       <h3 class="title">dom with class</h3>
+       <button onclick="fn2()">login</button>
+        <script>
+             function fn2(){
+            var head=document.querySelector(".title");
+            head.innerText="dom with classname update" ;
+             head.style.color="aqua"; 
+             h2.style.backgroundColor="green";  
+            }
+
+        </script>
+    </body>
+</html>

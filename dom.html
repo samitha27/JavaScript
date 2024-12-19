@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title> create buttons,headings... using javascript </title>   
+    </head>
+    <body>
+        <!--<button onclick="fn()">submit</button>-->
+        <script>
+            //function fn(){
+            var btn=document.createElement("button");  //to create button in javascript
+            btn.innerText="javascript button";  
+            btn.style.backgroundColor="plum"; 
+            document.querySelector("body").appendChild(btn); //append meaning is after
+           
+            var h1=document.createElement("h1");  //to create h1 in javascript
+            h1.innerText="javascript heading"; 
+            h1.style.color="red"; 
+            document.querySelector("body").prepend(h1);  //prepend meaning is before
+            //}
+        </script>
+    </body>
+</html>

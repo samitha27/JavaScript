@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>dom queryselectorall with classname,tag name</title>
+    </head>
+    <body>
+        <h2>title1</h2>
+        <h2>title2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam sequi aperiam, delectus similique animi ex nulla accusamus obcaecati excepturi harum sapiente numquam esse qui molestiae nisi cum iusto hic.
+        Iure impedit expedita ab voluptatum eius minima sapiente ratione illum iste nihil fugiat provident sint dolorum, sit aperiam fuga qui iusto! Saepe doloribus debitis vero, recusandae modi enim nihil quidem.
+        Veritatis recusandae sequi impedit commodi fugiat dolores dolorem animi, unde aperiam et alias quam similique porro deserunt nesciunt eveniet officia quisquam temporibus quod. Minus nam nulla similique, ipsam ad repudiandae.</p>
+    <button onclick="fn()">access</button>
+    <script>
+        function fn(){
+            var h2=document.querySelectorall("h2");
+            var p=document.querySelectorall("p");
+            var h2dom=h2[1];
+            var pdom=p[0];
+            
+            h2dom.style.color="green";
+            pdom.style.color="indigo";
+            pdom.style.backgroundColor="indigo";
+        }
+    </script>
+    </body>
+</html>
